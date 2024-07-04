@@ -3,7 +3,6 @@
 <head>
 	<meta charset="utf-8">
 <!-- 	-------- TO-DO: ADD META TAG AND NAME HERE -------- -->
-<meta charset="UTF-8">
 <meta name="description" content="Free Web tutorials">
 <meta name="keywords" content="HTML, CSS, JavaScript">
 <meta name="author" content="John Doe">
@@ -34,21 +33,22 @@
 
 <!-- 	-------- TO-DO: ADD FORM CODE HERE DURING CLASS, FOLLOW ALONG TO COMPLETE -------- -->
 		</article>
-		<form action="" method="get" class="form">
-			<label for="name">Full name:</label>
+<form>
+<label for="name">Full name:</label>
 <input id="name" type="text" autocomplete="name">
 <label for ="email">Email:</label>	
 <input id="email" type="email" autocomplete= "email">
-<label for ="phone"> Phone</label>	
-<input for="phone" type="phone" autocomplete ="phone">
+<label for ="phone"> Phone:</label>	
+<input id="phone" type="tel" autocomplete ="phone">
 <fieldset>
 	<legend>Preferred Contact Method</legend>
-	<input id="Phone" type ="radio" name="contact" value="Phone">
 	<label for="Phone">Phone</label>
-	<input id="Email" type ="radio" name="contact" value="Email">
+	<input id="Phone" type ="radio" name="contact" value="Phone">
 	<label for="Message">Email</label>
+	<input id="Email" type ="radio" name="contact" value="Email">
+
 </fieldset>
-<label for ="State"> State of residence</label>
+<label for ="state"> State of residence</label>
 <select id="state" name="select">
 <option value="1">Alabama</option>
 <option value="2">Alaska</option>
@@ -101,10 +101,8 @@
 <option value="49">Wisconsin</option>
 <option value="50">Wyoming</option>
 </select>
-
-
 <label for="Message">Comments </label><br>
-<textarea id="Message" autocomplete="text"></textarea>
+<textarea id="Message"></textarea>
 <input type="submit" name="submit" value="Submit">
 		</form>
 	</main>
